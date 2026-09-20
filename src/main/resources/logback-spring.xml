@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+
+    <!-- Your application's logs -->
+    <appender name="APP_CONSOLE"
+              class="ch.qos.logback.core.ConsoleAppender">
+
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>INFO</level>
+        </filter>
+
+        <encoder>
+            <pattern>
+                %d{HH:mm:ss.SSS}  %green(%-5level) %cyan(%logger) - %msg%n
+            </pattern>
+        </encoder>
+
+    </appender>
+
+
+    <!-- Spring/Hibernate/other logs -->
+    <appender name="NORMAL_CONSOLE"
+              class="ch.qos.logback.core.ConsoleAppender">
+
+        <encoder>
+            <pattern>
+                %d{HH:mm:ss.SSS} %-5level %logger  - %msg%n
+            </pattern>
+        </encoder>
+
+    </appender>
+
+
+    <!-- Your package -->
+    <logger name="com.infy.db.JPA_practise"
+            level="INFO"
+            additivity="false">
+
+        <appender-ref ref="APP_CONSOLE"/>
+    </logger>
+
+
+    <!-- Everything else -->
+    <root level="INFO">
+        <appender-ref ref="NORMAL_CONSOLE"/>
+    </root>
+
+</configuration>

@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: QA_APP
+  datasource:
+    url: jdbc:mysql://localhost:3306/practise_db
+    username: root
+    password: root
+
+  jpa:
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: create-drop    # create | create-drop | update | validate | none
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: true
+    open-in-view: true
+
+logging:
+  level:
+    root: INFO
+    org.hibernate.SQL: DEBUG
+    org.hibernate.orm.jdbc.bind: TRACE
+
+#spring.jpa.defer-datasource-initialization=true
+#spring.sql.init.mode=always
+#spring.sql.init.data-locations=classpath:data.sql

@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: JPA_practise
+  profiles:
+    active: dev
