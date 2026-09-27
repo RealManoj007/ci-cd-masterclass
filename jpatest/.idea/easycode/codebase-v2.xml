@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="com.obiscr.chatgpt.settings.EasyCodeState">
+    <option name="projectFiles" value="$PROJECT_DIR$/jpatest/src/main/java/com/infy/jpatest/entity/Users.java;C:/Users/acer/Desktop/Java/jpatest/jpatest/src/main/java/com/infy/jpatest/repository/UserRepository.java;C:/Users/acer/Desktop/Java/jpatest/jpatest/src/main/java/com/infy/jpatest/service/UsersService.java;C:/Users/acer/Desktop/Java/jpatest/jpatest/src/main/java/com/infy/jpatest/DataLoader.java;C:/Users/acer/Desktop/Java/jpatest/jpatest/src/main/java/com/infy/jpatest/JpatestApplication.java;C:/Users/acer/Desktop/Java/jpatest/jpatest/src/test/java/com/infy/jpatest/JpatestApplicationTests.java;C:/Users/acer/Desktop/Java/jpatest/jpatest/HELP.md" />
+  </component>
+</project>
