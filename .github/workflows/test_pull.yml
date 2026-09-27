@@ -1,7 +1,7 @@
 name: Test Pull Request Workflow
 on: pull_request
 jobs:
-  run-1:
+  job-1:
     runs-on: ubuntu-latest
     steps:
       - name: Step 1
